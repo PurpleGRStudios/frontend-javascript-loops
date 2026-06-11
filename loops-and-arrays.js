@@ -46,6 +46,10 @@ for (let Bands = 0; Bands < salaries.length; Bands++) {
 
 const birthYears = [1995, 1997, 1990, 2003, 1982];
 
+for (let Year = 0; Year < birthYears.length; Year++) {
+    console.log(2025 - birthYears[Year]);
+}
+
 
 // ==========================================
 // Opdracht 4. Bob houdt bij hoeveel verlofuren medewerkers per maand opnemen. Nu wil hij voor het nieuwe jaar een bonusstructuur toepassen:
@@ -59,6 +63,14 @@ const birthYears = [1995, 1997, 1990, 2003, 1982];
 
 const leaveHours = [6, 9, 2, 7, 3];
 
+for (let hour = 0; hour < leaveHours.length; hour++) {
+    if (leaveHours % 2 === 0) {
+        console.log(leaveHours[hour] * 2);
+    }
+    else{
+        console.log(leaveHours[hour] * 0.5);
+    }
+}
 
 // ==========================================
 // Opdracht 5 (BONUS). Na een dag bij Loop-it Solutions zit je er lekker in, tot je beseft dat één van de machines de

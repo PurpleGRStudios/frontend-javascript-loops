@@ -23,6 +23,10 @@ const salaryDetails = [
 	{name: 'Otis', salary: 2800}
 ];
 
+for (let info = 0; info < salaryDetails.length; info++) {
+	console.log("Beste " + salaryDetails[info].name + ", je salaris van €" + salaryDetails[info].salary + ",- is zojuist overgemaakt. Val me nu alsjeblieft niet meer lastig.");
+}
+
 // ==========================================
 // Opdracht 2. Wanneer iemand een verlof-aanvraag doet, moet Bob eerst uit zijn hoofd uitrekenen of deze medewerker nog
 // voldoende vrije dagen over heeft voor de aanvraag. En dat gaat nog wel eens mis... Zorg ervoor dat het aantal vakantiedagen
@@ -44,6 +48,9 @@ const vacationDays = [
 	{name: 'Otis', totalVacationDays: 25, usedVacationDays: 7},
 ];
 
+for (let info = 0; info < vacationDays.length; info++) {
+	console.log(vacationDays[info].name + " heeft nog " + (vacationDays[info].totalVacationDays - vacationDays[info].usedVacationDays) + " vakantiedagen over. ");
+}
 
 // ==========================================
 // Opdracht 3. Bob heeft een lijst van medewerkers en de opleidingen die ze volgen. Hij wil weten wie er een opleiding volgen
@@ -62,6 +69,12 @@ const employeesInTraining = [
 	{name: 'Nina', training: 'Teamworktraining', month: 'Maart'},
 	{name: 'Otis', training: 'Teamworktraining', month: 'Februari'},
 ];
+
+for (let i = 0; i < employeesInTraining.length; i++) {
+	if(employeesInTraining[i].month === 'Januari'){
+		console.log(employeesInTraining[i].name + ": " + employeesInTraining[i].training);
+	}
+}
 
 // ==========================================
 // Opdracht 4a. Medewerkers worden ieder jaar beoordeelt op hun functioneren. Het is aan Bob om de scores om te zetten
