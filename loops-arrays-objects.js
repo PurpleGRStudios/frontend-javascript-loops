@@ -102,6 +102,15 @@ const scores = [
 	{name: 'Otis', score: 100, salaryIncrease: null},
 ];
 
+for (let info = 0; info < scores.length; info++) {
+	if(scores[info].score <= 60) {
+		console.log(scores[info].salaryIncrease);
+	}
+	else if (scores[info].score > 60) {
+		console.log(scores[info]);
+	}
+}
+
 // ==========================================
 // Opdracht 4b. Breid je script uit door het percentage op te slaan in de 'salaryIncrease'-property van ieder object in de array.
 
