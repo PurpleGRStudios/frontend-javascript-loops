@@ -7,13 +7,12 @@
 // ****
 // *****
 
-const banaan = ["*", "**", "***", "****", "*****"];
 
-for (let i = 0; i < banaan.length; i++) {
-    console.log(banaan[i]);
+const Cheese = ["*", "**", "***", "****", "*****"];
+
+for (let i = 0; i < Cheese.length; i++) {
+    console.log(Cheese[i]);
 }
-
-
 
 
 // Tip: je kunt de .repeat() methode gebruiken om een karakter een n aantal keer te herhalen... Dit heb je nog niet geleerd, maar bekijk hiervoor dit MDN-artikel eens: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/repeat
@@ -30,6 +29,13 @@ for (let i = 0; i < banaan.length; i++) {
 // klaar!
 // ==========================================
 
+const banaan = ["loop...", "loop...", "loop...", "loop...", "klaar!"];
+
+for (let i = 0; i < banaan.length; i++) {
+    console.log(banaan[i]);
+}
+
+
 
 // ==========================================
 // Opdracht 3. Maak een for-loop die automatisch factuurnummers genereert in het formaat INV-0001, INV-0002, enzovoorts. Zorg ervoor dat je begint bij nummer 1 en dat de nummers oplopen. Er zijn in totaal 8 factuurnummers nodig.
@@ -45,6 +51,13 @@ for (let i = 0; i < banaan.length; i++) {
 // 'INV-0008'
 
 // ==========================================
+
+
+for (let i = 1; i <= 8; i++) {
+    const Soul = String(i).padStart(4, "0");
+    console.log(`INV-${Soul}`)
+}
+
 
 // ==========================================
 // Opdracht 4. Schrijf een for-loop die van 9 tot en met 18 loopt en de uren logt.
@@ -65,6 +78,18 @@ for (let i = 0; i < banaan.length; i++) {
 // 18:00
 // ==========================================
 
+for (let uur = 9; uur <= 18; uur++) {
+    if (uur === 12) {
+        console.log(`${uur}:00 Lunchpauze!`);
+    }
+    else if (uur === 17) {
+        console.log(`${uur}:00 Bijna klaar...`);
+    }
+    else {
+        console.log(`${uur}:00`);
+    }
+}
+    // in de console.log moet er achter uur :00 komen te staan zodat het optelt vanaf 9:00 tot 18:00
 
 // ==========================================
 // Opdracht 5. Maak een for-loop die van 0 tot 9 loopt en de getallen 0 tot 9 logt.
@@ -82,6 +107,18 @@ for (let i = 0; i < banaan.length; i++) {
 // >> 9
 // ==========================================
 
+for (let tel = 0; tel <= 9; tel++) {
+    if(tel <= 2){
+        console.log(tel);
+    }
+    else if(tel >= 6){
+        console.log(`>>${tel}`);
+    }
+    else if(tel >= 3){
+        console.log(`>${tel}`);
+    }
+
+}
 
 // ==========================================
 // Opdracht 6 (BONUS). Schrijf een for-loop die van 0 tot 100 loopt en de getallen print.

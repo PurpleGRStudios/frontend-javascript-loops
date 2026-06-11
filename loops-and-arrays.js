@@ -13,6 +13,10 @@
 
 const meetingTimes = ['09:00', '10:30', '14:00', '15:30', '17:00'];
 
+for (let times = 0; times < meetingTimes.length; times++) {
+    console.log("Vergadering om " + meetingTimes[times]);
+}
+
 
 // ==========================================
 // Opdracht 2. In tegenstelling tot Bob, werken de andere medewerkers van Loop-it Solutions wél hard.
@@ -27,6 +31,9 @@ const meetingTimes = ['09:00', '10:30', '14:00', '15:30', '17:00'];
 
 const salaries = [3200, 2350, 2800, 3500, 2800];
 
+for (let Bands = 0; Bands < salaries.length; Bands++) {
+    console.log(salaries[Bands] * 1.05);
+}
 
 // ==========================================
 // Opdracht 3. Eén van Bob's taken is medewerkers feliciteren met hun "zoveelste" verjaardag.
